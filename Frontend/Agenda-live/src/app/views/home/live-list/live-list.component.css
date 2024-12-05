@@ -1,0 +1,25 @@
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* Alinha os cards ao início */
+  align-items: center; /* Centraliza verticalmente */
+  padding: 2%;
+  gap: 11px; /* Espaço entre os elementos */
+}
+
+.card-wrapper {
+  flex: 0 1 calc(33.3% - 11px); /* Tamanho padrão: 33.3% da largura */
+  margin: 0.5%;
+}
+
+@media (max-width: 960px) {
+  .card-wrapper {
+    flex: 0 1 calc(50% - 11px); /* Tamanho médio: 50% da largura */
+  }
+}
+
+@media (max-width: 600px) {
+  .card-wrapper {
+    flex: 0 1 100%; /* Tamanho pequeno: 100% da largura */
+  }
+}
